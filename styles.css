@@ -1,0 +1,26 @@
+:root{--bg:#071126;--card:#0b1724;--muted:#9fb0c9;--text:#e6eef7;--accent:#6ec1e4}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.nav{display:flex;align-items:center;gap:18px;padding:14px 24px;background:rgba(2,6,23,0.6);backdrop-filter:blur(4px)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.brand img{height:44px;border-radius:6px;background:#fff;padding:4px}
+.links{margin-left:auto;display:flex;gap:14px}
+.links a{color:var(--text);text-decoration:none;font-weight:700;padding:8px 10px;border-radius:8px}
+.links a.active, .links a:hover{background:rgba(110,193,228,0.12);color:var(--accent)}
+.hero{padding:80px 24px;text-align:center; background-image: url('assets/bg-hero.jpg'); background-size:cover; background-position:center}
+.logo-large{max-width:520px;margin:0 auto 12px;animation:fadeIn 900ms ease-out both;display:block}
+.tagline{font-size:20px;color:var(--muted);margin-bottom:10px;opacity:0;transform:translateY(8px);animation:slideUp 900ms 350ms ease-out both}
+.intro{max-width:900px;margin:0 auto;color:var(--muted);margin-bottom:14px}
+.badges{margin-top:12px}
+.badge{background:#083044;padding:8px 12px;border-radius:999px;color:#cfe3ff;border:1px solid #123;margin:0 6px;display:inline-block}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),#8bd17c);color:#071019;padding:12px 18px;border-radius:10px;font-weight:700;margin-top:14px;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.footer{padding:30px 24px;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);text-align:center;margin-top:28px}
+.mapwrap{height:480px;border-radius:12px;overflow:hidden;margin-top:12px;animation:fadeIn 900ms 600ms both}
+.person{display:flex;gap:12px;align-items:center}
+.avatar{width:92px;height:92px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.04);background:#0b1420}
+.input, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:#06101a;color:var(--text);margin-top:6px}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes slideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
